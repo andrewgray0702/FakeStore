@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+/* FOOTER AND HEADER*/
 footer {
 	margin-top: 10vh;
 	width: 100%;
@@ -14,16 +15,30 @@ footer {
 	flex-grow: 0;
 	flex-shrink: 0;
 }
+#footerImage {
+	height: 9.8vh;
+	box-sizing: border-box;
+	width: 5vw;
+}
+#footerInfo {
+	width: 95vw;
+	height: 9.8vh;
+	box-sizing: border-box;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+#containerHeader {
+	height: 8vh;
+	background-color: blue;
+	color: white;
+	text-align: center;
+}
+/* NAV AND LINKS  */
 nav {
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: row;
-}
-a:hover {
-	background-color: white;
-}
-.active {
-	background-color: black;
 }
 a {
 	text-decoration: none;
@@ -31,6 +46,17 @@ a {
 	background-color: grey;
 	text-align: center;
 }
+a:hover {
+	background-color: white;
+}
+.internalLink {
+	background-color: yellow;
+	color: black;
+}
+.active {
+	background-color: black;
+}
+/* DIVS AND CONTAINERS */
 .container {
 	width: 100%;
 	box-sizing: border-box;
@@ -53,15 +79,12 @@ a {
 	margin: 20px;
 	min-height: 200px;
 }
-.flexBasis {
-	flex: 1 1 100px;
-}
+
 .sideSection {
 	background-color: blue;
 	display: flex;
 	width: 25%;
 	flex-flow: column wrap;
-	justify-content: space-between;
 }
 .sideSub {
 	margin: 20px;
@@ -69,34 +92,22 @@ a {
 	color: white;
 	min-height: 100px;
 }
-#footerImage {
-	height: 9.8vh;
-	box-sizing: border-box;
-	width: 5vw;
-}
-#footerInfo {
-	width: 95vw;
-	height: 9.8vh;
-	box-sizing: border-box;
-	background-color: black;
-	color: white;
-	font-size: 20px;
-}
 
-input#comments {
-	width: 50%;
-	height: 10vh;
-}
-#containerHeader {
-	height: 8vh;
-	background-color: blue;
-	color: white;
-	text-align: center;
-}
+
 #containerContact {
 	background-color: grey;
 	font-size: 20px;
 	position: relative;
+}
+.sideMenu {
+	min-width: 100px;
+	text-align: center;
+	flex-basis: 20px;
+}
+/* INPUTS  */
+input#comments {
+	width: 50%;
+	height: 10vh;
 }
 #radioDiv {
 	margin-left: auto;
@@ -111,17 +122,20 @@ input#comments {
 	width: 100px;
 	height: 25px;
 }
+
+/* IMAGES */
 .forSaleImg {
 	width: 50px;
 }
 .forSaleImg:hover {
 	width: 75px;
 }
-.sideMenu {
-	min-width: 100px;
-	text-align: center;
+
+/* SINGLE CLASSES */
+.justifyContent {
+	justify-content: space-around;
 }
-.internalLink {
-	background-color: yellow;
-	color: black;
+
+.flexBasis {
+	flex: 1 1 100px;
 }
